@@ -1,7 +1,12 @@
-const express = require("express");
-const path = require("path");
+// Método viejo de importación
+// const express = require("express");
+// const path = require("path");
 
-const startServer = (options) => {
+// Importación moderna de módulos
+import express from "express";
+import path from "path";
+
+export const startServer = (options) => {
   const { port, public_path = "public" } = options;
 
   const app = express();
@@ -21,6 +26,7 @@ const startServer = (options) => {
   });
 };
 
-module.exports = {
-  startServer,
-};
+// sirve para exportar del método viejo en javascript
+//module.exports = {
+//  startServer,
+// };

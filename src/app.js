@@ -1,5 +1,10 @@
-const { envs } = require("./config/env");
-const { startServer } = require("./server/server");
+// Método viejo de importación
+// const { envs } = require("./config/env");
+// const { startServer } = require("./server/server");
+
+// Importación moderna de módulos
+import { envs } from "./config/env.js";
+import { startServer } from "./server/server.js";
 
 const main = () => {
   startServer({
